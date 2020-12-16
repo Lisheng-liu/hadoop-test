@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+<!--	<property> 
+		<name>mapreduce.output.fileoutputformat.compress</name> 
+		<value>true</value> 
+		<description>开启reduce输出压缩</description> 
+	</property> 
+	<property> 
+		<name>mapreduce.output.fileoutputformat.compress.codec</name> 
+		<value>org.apache.hadoop.io.compress.GzipCodec</value> 
+		<description>设置reduce输出压缩的格式</description> 
+	</property> -->
+</configuration>

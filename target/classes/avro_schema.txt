@@ -1,0 +1,23 @@
+{
+	"type": "record",
+	"name": "RunRecord",
+	"namespace": "com.hainiu",
+	"fields": [{
+			"name": "aid",
+			"type": "string",
+			"default":"null"
+		}, {
+			"name": "pkgname",
+			"type": "string",
+			"default":"null"
+		}, {
+			"name": "country",
+			"type": "string",
+			"default":"null"
+		}, {
+			"name": "gpcategory",
+			"type": "string",
+			"default":"null"
+		}
+	]
+}
