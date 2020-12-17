@@ -34,7 +34,7 @@ import java.io.IOException;
  * 4）job参数设置
  * 		任务允许时，指定的自定义分区类。
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 下午1:31:41
  */
 public class ScoreTest extends Configured implements Tool{
@@ -42,7 +42,7 @@ public class ScoreTest extends Configured implements Tool{
 	/**
 	 * map 阶段
 	 * 
-	 * @author 郑松松
+	 * @author liulisheng
 	 * @time   2019年8月4日 下午1:33:17
 	 */
 	public static class ScoreTestMapper extends Mapper<LongWritable, Text, Text, LongWritable>{

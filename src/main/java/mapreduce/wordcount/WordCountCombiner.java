@@ -25,7 +25,7 @@ import java.io.IOException;
  * 2）需要在job参数设置时增加
  *      job.setCombinerClass(WordCountCombiner.class);
  *      
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年7月30日 下午9:53:58
  */
 public class WordCountCombiner extends Configured implements Tool{

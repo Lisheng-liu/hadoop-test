@@ -13,7 +13,7 @@ import java.io.IOException;
 /**
  * 公共基类
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 下午6:28:06
  */
 public abstract class BaseMR {

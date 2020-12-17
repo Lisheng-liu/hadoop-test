@@ -21,7 +21,7 @@ import java.io.IOException;
 /**
  * WordCount 单词统计
  *
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年7月30日 下午3:09:48
  */
 public class WordCount extends Configured implements Tool {

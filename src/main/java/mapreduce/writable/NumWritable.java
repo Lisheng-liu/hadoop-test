@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * 自定义序列化类实现序列化和比较
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 下午1:15:50
  */
 public class NumWritable implements WritableComparable<NumWritable>{

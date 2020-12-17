@@ -18,7 +18,7 @@ import java.io.IOException;
 /**
  * 无自定义reduce的排序
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 上午11:45:35
  */
 public class AscSortWithOutDefindReducer extends Configured implements Tool {

@@ -33,7 +33,7 @@ import java.io.IOException;
  *   key :  单词       Text
  *   value: null  NullWritable
  *
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年7月31日 下午10:17:53
  */
 

@@ -20,7 +20,7 @@ import java.io.IOException;
 /**
  * compress 输出压缩
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年7月30日 下午10:26:51
  */
 public class WordCountCompressMultiOutput  extends Configured implements Tool{

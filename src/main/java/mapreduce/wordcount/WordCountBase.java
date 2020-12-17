@@ -17,7 +17,7 @@ import java.io.IOException;
 /**
  * WordCountBase  单词统计（打印日志）
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年7月30日 下午4:57:54
  */
 public class WordCountBase extends Configured implements Tool{

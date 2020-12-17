@@ -32,7 +32,7 @@ import java.io.IOException;
  * 3）job参数设置：
  * 		设置reduce个数。
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 下午3:59:28
  */
 public class PartitionTest extends Configured implements Tool{

@@ -40,7 +40,7 @@ import java.io.IOException;
  * 			SortGroupComparator extends WritableComparator
  * 			job.setGroupingComparatorClass(SortGroupComparator.class);
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 下午4:23:29
  */
 public class SecondarySort extends Configured implements Tool{

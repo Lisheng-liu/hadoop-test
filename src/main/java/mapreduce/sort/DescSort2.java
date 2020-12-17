@@ -35,7 +35,7 @@ import java.io.IOException;
  * 
  * 4）job参数设置时，需要设置降序排序的外部比较器类。
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 上午11:58:38
  */
 public class DescSort2 extends Configured implements Tool{

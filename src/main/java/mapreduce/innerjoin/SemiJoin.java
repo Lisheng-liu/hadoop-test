@@ -37,7 +37,7 @@ import java.util.Map;
  * job参数设置：
  * 		无reduce,设置reduce个数为0
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 上午9:47:43
  */
 public class SemiJoin extends Configured implements Tool{

@@ -41,18 +41,36 @@ public class Sort {
         }
     }
 
+
+    static class SortInt implements Comparable<SortInt>{
+
+        private Integer integer;
+
+        public SortInt(Integer integer) {
+            this.integer = integer;
+        }
+        public Integer getInteger(){
+            return this.integer;
+        }
+
+        @Override
+        public int compareTo(SortInt o) {
+            return o.getInteger()-this.getInteger();
+        }
+    }
+
     public static class Reduce extends Reducer<IntWritable, Text, Text, IntWritable>{
 
         private static final int TOP = 10;
 
         private static MultipleOutputs<Text,IntWritable> mos = null;
 
-        private TreeMap<Integer,String> treeMap = new TreeMap<Integer, String>();
+        private TreeMap<SortInt,String> treeMap = new TreeMap<SortInt, String>();
 
         @Override
          public void reduce(IntWritable key,Iterable<Text> values,Context context){
           for(Text value:values){
-              treeMap.put(key.get(),value.toString());
+              treeMap.put(new SortInt(key.get()),value.toString());
               if(treeMap.size()>TOP){
                   treeMap.remove(treeMap.lastKey());
               }
@@ -63,8 +81,8 @@ public class Sort {
         protected void cleanup(Context context) throws IOException, InterruptedException {
             String path = context.getConfiguration().get("topKPath");
             mos = new MultipleOutputs<>(context);
-            for(java.util.Map.Entry<Integer,String> entry: treeMap.entrySet()){
-                mos.write("topKMOS",new Text(entry.getValue()),new IntWritable(entry.getKey()),path);
+            for(java.util.Map.Entry<SortInt,String> entry: treeMap.entrySet()){
+                mos.write("topKMOS",new Text(entry.getValue()),new IntWritable(entry.getKey().getInteger()),path);
             }
             mos.close();
         }

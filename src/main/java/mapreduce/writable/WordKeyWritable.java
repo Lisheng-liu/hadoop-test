@@ -10,7 +10,7 @@ import java.io.IOException;
 /**
  * 自定义序列化类，并实现二次排序，主关键字升序， 次关键字降序
  * 
- * @author 郑松松
+ * @author liulisheng
  * @time   2019年8月4日 下午4:31:20
  */
 public class WordKeyWritable implements WritableComparable<WordKeyWritable>{
