@@ -52,7 +52,7 @@ public class InnerJoinMultiInput extends Configured implements Tool{
 		@Override
 		protected void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 
-			String[] splits = value.toString().split("\t");
+			String[] splits = value.toString().split(",");
 
 			long id = Long.parseLong(splits[0]);
 			String name = splits[1];
@@ -75,7 +75,7 @@ public class InnerJoinMultiInput extends Configured implements Tool{
 		@Override
 		protected void map(LongWritable key, Text value, Context context)
 				throws IOException, InterruptedException {
-			String[] splits = value.toString().split("\t");
+			String[] splits = value.toString().split(",");
 			long id = Long.parseLong(splits[0]);
 			String name = splits[1];
 			
@@ -153,6 +153,7 @@ public class InnerJoinMultiInput extends Configured implements Tool{
 	
 	public static void main(String[] args) throws Exception {
 		// 运行参数： D:/tmp/input/innerjoin/m1.txt D:/tmp/input/innerjoin/m2.txt C:/Users/song/Desktop/output/wordcount
+		args = new String[]{"/tmp/mr/m1.txt","/tmp/mr/m2.txt","/tmp/mr/output"};
 		ToolRunner.run(new InnerJoinMultiInput(), args);
 	}
 }
